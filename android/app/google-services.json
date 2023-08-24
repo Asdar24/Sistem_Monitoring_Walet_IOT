@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "982725767484",
+    "firebase_url": "https://monitoring-774d5-default-rtdb.firebaseio.com",
+    "project_id": "monitoring-774d5",
+    "storage_bucket": "monitoring-774d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982725767484:android:9a15b238b71f704dddae39",
+        "android_client_info": {
+          "package_name": "com.example.monitoring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982725767484-f64pdtvf1i4anrsja3vltkn7vnq70gbf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgtqLMI6cjVAUf_oc6cXASlrZ2K4sf3FE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982725767484-f64pdtvf1i4anrsja3vltkn7vnq70gbf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
