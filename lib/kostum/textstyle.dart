@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 const kHeadline = TextStyle(
-  color: Colors.white,
-  fontSize: 30,
+  color: Colors.black,
+  fontSize: 40,
   fontWeight: FontWeight.bold,
 );
 
 const kBodyText = TextStyle(
-  color: Colors.grey,
+  color: Colors.black,
   fontSize: 20,
 );
 

@@ -16,7 +16,7 @@ class CircleProgress extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     int maximumValue =
-        isSuhu ? 50 : 100; // kelembapan max is 50, Suhu max is 100
+        isSuhu ? 100 : 100; // kelembapan max is 50, Suhu max is 100
 
     Paint outerCircle = Paint()
       ..strokeWidth = 14

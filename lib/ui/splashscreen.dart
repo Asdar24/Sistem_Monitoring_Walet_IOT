@@ -39,9 +39,13 @@ class SplashScreenPageState extends State<SplashScreenPage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Image.asset(
-              "assets/images/waleet.jpg",
+              "assets/images/bwang.jpg",
               width: 200,
               height: 200,
+            ),
+            const Text(
+              "",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             )
           ],
         ),

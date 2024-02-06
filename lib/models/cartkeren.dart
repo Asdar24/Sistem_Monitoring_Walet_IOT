@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:monitoring/kostum/color.dart';
+
 import 'package:monitoring/kostum/textstyle.dart';
-import 'package:monitoring/models/circleprogres.dart';
 
 class MySensorCard extends StatelessWidget {
   const MySensorCard(
@@ -9,17 +8,14 @@ class MySensorCard extends StatelessWidget {
       required this.name,
       required this.assetImage,
       required this.unit,
-      required this.circular,
-      required this.cek,
       required this.nilai})
       : super(key: key);
 
   final String name;
   final String unit;
-  final double circular;
+
   final int nilai;
   final AssetImage assetImage;
-  final bool cek;
 
   @override
   Widget build(BuildContext context) {
@@ -29,10 +25,10 @@ class MySensorCard extends StatelessWidget {
         ),
         shadowColor: const Color.fromARGB(255, 169, 169, 169),
         elevation: 15.0,
-        color: kMainBG,
+        color: Colors.white,
         child: SizedBox(
           width: MediaQuery.of(context).size.width,
-          height: 200,
+          height: 160,
           child: Row(
             children: [
               Expanded(
@@ -49,7 +45,7 @@ class MySensorCard extends StatelessWidget {
                     const SizedBox(
                       height: 10,
                     ),
-                    Text(name, style: kBodyText.copyWith(color: Colors.white)),
+                    Text(name, style: kBodyText.copyWith()),
                     const SizedBox(
                       height: 10,
                     ),
@@ -60,19 +56,16 @@ class MySensorCard extends StatelessWidget {
                 flex: 1,
                 child: Container(
                   padding:
-                      const EdgeInsets.symmetric(vertical: 30, horizontal: 8),
-                  child: CustomPaint(
-                    foregroundPainter: CircleProgress(circular, cek),
-                    child: SizedBox(
-                      width: 200,
-                      height: 200,
-                      child: Center(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            Text('$nilai$unit', style: kHeadline),
-                          ],
-                        ),
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 8),
+                  child: SizedBox(
+                    width: 200,
+                    height: 200,
+                    child: Center(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Text('$nilai$unit', style: kHeadline),
+                        ],
                       ),
                     ),
                   ),

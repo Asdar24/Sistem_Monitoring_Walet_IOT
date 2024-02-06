@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:monitoring/kostum/color.dart';
+
 import 'package:monitoring/ui/splashscreen.dart';
 
 void main() async {
@@ -14,16 +14,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          scaffoldBackgroundColor: kMainBG,
-          primarySwatch: Colors.blue,
-          visualDensity: VisualDensity.adaptivePlatformDensity,
-          useMaterial3: true,
-        ),
-        home: const SplashScreenPage());
+    return const MaterialApp(
+        debugShowCheckedModeBanner: false, home: SplashScreenPage());
   }
 }
 
